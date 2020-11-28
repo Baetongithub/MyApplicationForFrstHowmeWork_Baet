@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_mount_lake_scnd_ed"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/image_view"
+        style="@style/style_for_image_view"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/welcome_geektech.txt_view"
+        style="@style/style_for_frst_text_view"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/welcome_geektech.txt_view" />
+
+    <EditText
+        android:id="@+id/edText_login"
+        style="@style/StyleForLoginEdText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/welcome_geektech.txt_view" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="411dp"
+        android:layout_height="59dp"
+        app:layout_constraintTop_toBottomOf="@id/edText_login"
+        app:passwordToggleEnabled="true"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_password"
+            style="@style/StyleForPasswordEdText"
+            android:layout_width="405dp"
+            android:layout_height="match_parent"
+            android:background="#5E6CBF"
+            app:layout_constraintTop_toTopOf="@id/edText_login" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/bttn_sign_in"
+        style="@style/StyleForBttnSign_in"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="159dp"
+        app:layout_constraintTop_toTopOf="@+id/edText_login" />
+
+    <TextView
+        android:id="@+id/notify_register_view"
+        style="@style/StyleForRegisterNotifyTxtVIew"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bttn_sign_in" />
+
+    <Button
+        android:id="@+id/bttn_register"
+        style="@style/style_for_bttn_register"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/notify_register_view" />
+
+    <TextView
+        android:id="@+id/noify_error_txt"
+        style="@style/style_for_ntfy_txt_view"
+        android:layout_width="300dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edText_login" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

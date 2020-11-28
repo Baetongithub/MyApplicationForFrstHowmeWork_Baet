@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background_mount_lake_scnd_ed"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/image_view"
+        style="@style/style_for_image_view"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/welcome_geektech.txt_view"
+        style="@style/style_for_frst_text_view"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/welcome_geektech.txt_view" />
+
+    <EditText
+        android:id="@+id/edText_login"
+        style="@style/StyleForLoginEdText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/welcome_geektech.txt_view"
+        />
+
+
+    <EditText
+        android:id="@+id/edit_text_password"
+        style="@style/StyleForPasswordEdText"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="@id/edText_login"
+        />
+
+    <Button
+        android:id="@+id/bttn_sign_in"
+        style="@style/StyleForBttnSign_in"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edit_text_password" />
+
+    <TextView
+        android:id="@+id/notify_register_view"
+        style="@style/StyleForRegisterNotifyTxtVIew"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bttn_sign_in"/>
+
+    <Button
+        android:id="@+id/bttn_register"
+        style="@style/style_for_bttn_register"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/notify_register_view" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

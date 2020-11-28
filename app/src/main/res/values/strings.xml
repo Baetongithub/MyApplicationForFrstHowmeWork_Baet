@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MyApplicationForFrstHowmeWork_Baet</string>
+    <string name="user_login">Ваш логин</string>
+    <string name="user_password">Ваш пароль</string>
+    <string name="register_for_bttn">Регистрация</string>
+    <string name="welcome_geektech_txt">Добро пожаловать в GeekTech!</string>
+    <string name="last_txt_view">Войдите в систему</string>
+    <string name="notify_register_txt">Haven`t registered yet?</string>
+    <string name="sign_in_bttn_txt">Sign in</string>
+    <string name="register_bttn_text">here you can register</string>
+    <string name="your_login_txt">Enter your login here</string>
+    <string name="your_password_txt">Your password</string>
+    <string name="welcome_geektech_eng.txt">Welcome to GeekTech!</string>
+    <string name="notify_error_text">You entered incorrect data!</string>
+
+</resources>
